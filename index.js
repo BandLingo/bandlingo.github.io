@@ -17,7 +17,7 @@ var tgl = 0;
 var crmc = 0;
 
 // Only for text, what spelling is correct
-var crtxt = ;
+var crtxt = 0;
 
 
 // The number of questions there are
