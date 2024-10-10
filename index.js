@@ -43,17 +43,17 @@ function newquestion() {
 
   // Actually writes the question
   // Ineffecient, probably will fid faster solution, but will work for now.
-if (rng == 0){
-  tgl = 0;
-  crmc = 3;
+  if (rng == 0){
+    tgl = 0;
+    crmc = 3;
     
-  q.innerHTML = "Fill in the blank.";
-  q2.innerHTML = "I am the ______";
-  bt1.innerHTML = "ohio";
-  bt2.innerHTML = "fanum tax";
-  bt3.innerHTML = "sigma";
-  bt4.innerHTML = "mewing";
-  }
+    q.innerHTML = "Fill in the blank.";
+    q2.innerHTML = "I am the ______";
+    bt1.innerHTML = "ohio";
+    bt2.innerHTML = "fanum tax";
+    bt3.innerHTML = "sigma";
+    bt4.innerHTML = "mewing";
+   }
 
   // Toggles on and off multiple choice
   if (tgl == 0) {
