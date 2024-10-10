@@ -57,10 +57,10 @@ function newquestion() {
 
   // Toggles on and off multiple choice
   if (tgl == 0) {
-    txtcont.disabled = "true";
-    mc.disabled = "false";
+    txtcont.style.display = "none";
+    mc.style.display = "";
   } else if (tgl == 1) {
-    txtcont.disabled = "false";
-    mc.disabled = "true";
+    txtcont.style.display = "";
+    mc.style.display = "none";
   }
 }
