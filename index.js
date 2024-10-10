@@ -1,9 +1,10 @@
+
 // Define all the input variables
-var bt1 = document.getElementById("bt1");
-var bt2 = document.getElementById("bt2");
-var bt3 = document.getElementById("bt3");
-var bt4 = document.getElementById("bt4");
-var txt = document.getElementById("text");
+const bt1 = document.getElementById("bt1");
+const bt2 = document.getElementById("bt2");
+const bt3 = document.getElementById("bt3");
+const bt4 = document.getElementById("bt4");
+let txt = document.getElementById("text");
 
 
 // The random number generated every quetion
@@ -25,8 +26,8 @@ var quests = 1;
 
 
 // Define all the question variables
-var q = document.getElementById("question");
-var q2 = document.getElementById("text");
+const q = document.getElementById("question");
+const q2 = document.getElementById("text");
 
 
 // Define all the <div>
@@ -39,14 +40,16 @@ var txtcont = document.getElementById("ta");
 // Run every time a question is answered
 function newquestion() {
   // Random question
-  rng = Math.random(quests-1);
+  rng = Math.floor(Math.random(quests));
 
   // Actually writes the question
   // Ineffecient, probably will fid faster solution, but will work for now.
+//  document.getElementById("text").innerHTML = "hi";
+  txt.innerHTML = "hi";
   if (rng == 0){
     tgl = 0;
     crmc = 3;
-    
+
     q.innerHTML = "Fill in the blank.";
     q2.innerHTML = "I am the ______";
     bt1.innerHTML = "ohio";
@@ -58,7 +61,7 @@ function newquestion() {
   // Toggles on and off multiple choice
   if (tgl == 0) {
     txtcont.style.display = "none";
-    mc.style.display = "";
+    mc.style.display = "block";
   } else if (tgl == 1) {
     txtcont.style.display = "";
     mc.style.display = "none";
