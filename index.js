@@ -67,3 +67,37 @@ function newquestion() {
     mc.style.display = "none";
   }
 }
+// Checks the answer
+function mc1a(){
+  if (crmc == 1){
+    alert("yes");
+  } else {
+    alert("no");  
+  }
+}
+
+function mc2a(){
+  if (crmc == 2){
+    alert("yes");
+  } else {
+    alert("no");  
+  }
+}
+
+function mc3a(){
+  if (crmc == 3){
+    alert("yes");
+  } else {
+    alert("no");  
+  }
+}
+
+function mc4a(){
+  if (crmc == 4){
+    alert("yes");
+  } else {
+    alert("no");  
+  }
+}
+
+
