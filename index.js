@@ -40,8 +40,8 @@ var txtcont = document.getElementById("ta");
 // Run every time a question is answered
 function newquestion() {
   // Random question
-  //rng = Math.floor(Math.random(quests));
-rng = 1;
+  rng = Math.floor(Math.random(quests));
+
   // Actually writes the question
   // Ineffecient, probably will fid faster solution, but will work for now.
 //  document.getElementById("text").innerHTML = "hi";
