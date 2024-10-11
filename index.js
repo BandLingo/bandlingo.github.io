@@ -44,15 +44,13 @@ var txtcont = document.getElementById("ta");
 
 // Run every time a question is answered
 function newquestion() {
-  // Ensure quests is defined and accessible
-  console.log('Number of questions:', quests); // Check if quests is defined
 
   // Random question
   const rng = Math.floor(Math.random() * quests);
-  console.log('Random question index:', rng); // Log the value of rng
+  console.log('Random question index:', rng);
 
   // Actually writes the question
-  txt.innerHTML = "hi"; // Optional message
+  alert(rng);
   if (rng === 0) {
     tgl = 0;
     crmc = 3;
