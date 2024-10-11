@@ -93,8 +93,7 @@ function mc1a(){
   } else {
     alert("no");  
   }
-  delay(50);
-  newquestion();
+  setTimeout(newquestion, 50);
 }
 
 function mc2a(){
@@ -103,8 +102,7 @@ function mc2a(){
   } else {
     alert("no");  
   }
-  delay(50);
-  newquestion();
+  setTimeout(newquestion, 50);
 }
 
 function mc3a(){
@@ -113,8 +111,7 @@ function mc3a(){
   } else {
     alert("no");  
   }
-  delay(50);
-  newquestion();
+  setTimeout(newquestion, 50);
 }
 
 function mc4a(){
@@ -123,8 +120,7 @@ function mc4a(){
   } else {
     alert("no");  
   }
-  delay(50);
-  newquestion();
+  setTimeout(newquestion, 50);
 }
 newquestion();
 
