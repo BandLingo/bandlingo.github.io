@@ -53,7 +53,7 @@ function newquestion() {
   // Ineffecient, probably will fid faster solution, but will work for now.
 // document.getElementById("text").innerHTML = "hi";
   txt.innerHTML = "hi";
-  if (rng == 0){
+  if (rng === 0){
     tgl = 0;
     crmc = 3;
 
@@ -64,7 +64,7 @@ function newquestion() {
     bt3.innerHTML = "sigma";
     bt4.innerHTML = "mewing";
    } 
-  if (rng == 1){
+  if (rng === 1){
     tgl = 0;
     crmc = 2;
 
