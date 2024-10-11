@@ -85,6 +85,7 @@ function mc1a(){
   } else {
     alert("no");  
   }
+  delay(50);
   newquestion();
 }
 
@@ -94,6 +95,7 @@ function mc2a(){
   } else {
     alert("no");  
   }
+  delay(50);
   newquestion();
 }
 
@@ -103,6 +105,7 @@ function mc3a(){
   } else {
     alert("no");  
   }
+  delay(50);
   newquestion();
 }
 
@@ -112,6 +115,7 @@ function mc4a(){
   } else {
     alert("no");  
   }
+  delay(50);
   newquestion();
 }
 
