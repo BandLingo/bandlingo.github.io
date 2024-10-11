@@ -118,5 +118,6 @@ function mc4a(){
   delay(50);
   newquestion();
 }
+newquestion();
 
 
