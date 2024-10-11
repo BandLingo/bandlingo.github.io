@@ -56,7 +56,8 @@ function newquestion() {
     bt2.innerHTML = "fanum tax";
     bt3.innerHTML = "sigma";
     bt4.innerHTML = "mewing";
-   } else if (rng == 1){
+   } 
+  if (rng == 1){
     tgl = 0;
     crmc = 2;
 
