@@ -37,6 +37,10 @@ var mc = document.getElementById("mc");
 // Text Box container
 var txtcont = document.getElementById("ta");
 
+
+// Make sure you never get a non existing question
+quests = quests - 0.1;
+
 // Run every time a question is answered
 function newquestion() {
   // Random question
@@ -44,7 +48,7 @@ function newquestion() {
 
   // Actually writes the question
   // Ineffecient, probably will fid faster solution, but will work for now.
-//  document.getElementById("text").innerHTML = "hi";
+// document.getElementById("text").innerHTML = "hi";
   txt.innerHTML = "hi";
   if (rng == 0){
     tgl = 0;
