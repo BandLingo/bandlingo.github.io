@@ -22,7 +22,7 @@ var crtxt = 0;
 
 
 // The number of questions there are
-var quests = 1;
+var quests = 2;
 
 
 // Define all the question variables
@@ -56,7 +56,18 @@ function newquestion() {
     bt2.innerHTML = "fanum tax";
     bt3.innerHTML = "sigma";
     bt4.innerHTML = "mewing";
+   } else if (rng == 1){
+    tgl = 0;
+    crmc = 2;
+
+    q.innerHTML = "Fill in the blank.";
+    q2.innerHTML = "_______ toilet";
+    bt1.innerHTML = "ohio";
+    bt2.innerHTML = "skibidi";
+    bt3.innerHTML = "mewing";
+    bt4.innerHTML = "fanum tax";
    }
+  
 
   // Toggles on and off multiple choice
   if (tgl == 0) {
