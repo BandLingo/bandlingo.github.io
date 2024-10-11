@@ -42,15 +42,12 @@ var txtcont = document.getElementById("ta");
 quests = quests - 0.1;
 
 // Easier to write
-function rand(max) {
-  return Math.floor(Math.random() * max);
-}
 
 
 // Run every time a question is answered
 function newquestion() {
   // Random question
-  rng = rand(quests);
+  rng = Math.floor(Math.random() * quests); 
 
   // Actually writes the question
   // Ineffecient, probably will fid faster solution, but will work for now.
