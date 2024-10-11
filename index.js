@@ -22,7 +22,7 @@ var crtxt = 0;
 
 
 // The number of questions there are
-var quests = 2;
+const quests = 2;
 
 
 // Define all the question variables
@@ -38,22 +38,22 @@ var mc = document.getElementById("mc");
 var txtcont = document.getElementById("ta");
 
 
-// Make sure you never get a non existing question
-quests = quests - 0.1;
 
-// Easier to write
+
 
 
 // Run every time a question is answered
 function newquestion() {
+  // Ensure quests is defined and accessible
+  console.log('Number of questions:', quests); // Check if quests is defined
+
   // Random question
-  rng = Math.floor(Math.random() * quests); 
+  const rng = Math.floor(Math.random() * quests);
+  console.log('Random question index:', rng); // Log the value of rng
 
   // Actually writes the question
-  // Ineffecient, probably will fid faster solution, but will work for now.
-// document.getElementById("text").innerHTML = "hi";
-  txt.innerHTML = "hi";
-  if (rng === 0){
+  txt.innerHTML = "hi"; // Optional message
+  if (rng === 0) {
     tgl = 0;
     crmc = 3;
 
@@ -63,8 +63,8 @@ function newquestion() {
     bt2.innerHTML = "fanum tax";
     bt3.innerHTML = "sigma";
     bt4.innerHTML = "mewing";
-   } 
-  if (rng === 1){
+  } 
+  if (rng === 1) {
     tgl = 0;
     crmc = 2;
 
@@ -74,18 +74,20 @@ function newquestion() {
     bt2.innerHTML = "skibidi";
     bt3.innerHTML = "mewing";
     bt4.innerHTML = "fanum tax";
-   }
-  
+  }
 
   // Toggles on and off multiple choice
-  if (tgl == 0) {
+  if (tgl === 0) {
     txtcont.style.display = "none";
     mc.style.display = "block";
-  } else if (tgl == 1) {
+  } else if (tgl === 1) {
     txtcont.style.display = "";
     mc.style.display = "none";
   }
 }
+
+
+
 // Checks the answer
 function mc1a(){
   if (crmc == 1){
