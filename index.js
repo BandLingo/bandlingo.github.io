@@ -41,10 +41,16 @@ var txtcont = document.getElementById("ta");
 // Make sure you never get a non existing question
 quests = quests - 0.1;
 
+// Easier to write
+function rand(max) {
+  return Math.floor(Math.random() * max);
+}
+
+
 // Run every time a question is answered
 function newquestion() {
   // Random question
-  rng = Math.floor(Math.random(quests));
+  rng = rand(quests);
 
   // Actually writes the question
   // Ineffecient, probably will fid faster solution, but will work for now.
