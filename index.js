@@ -142,6 +142,14 @@ document.getElementById("bt4").addEventListener("click", function() {
     }
   newquestion();
 });
+document.getElementById("sub").addEventListener("click", function() {
+    if (crtxt === /* don't know what goes here yet :) */){
+      alert("yes");
+    } else {
+      alert("no")
+    }
+  newquestion();
+});
 newquestion();
 
 
