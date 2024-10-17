@@ -87,41 +87,41 @@ function newquestion() {
 
 
 // Checks the answer
-function mc1a(){
-  if (crmc == 1){
-    alert("yes");
-  } else {
-    alert("no");  
-  }
-  setTimeout(newquestion, 50);
-}
+document.getElementById("bt1").addEventListener("click", function() {
+    if (crmc === 1){
+      alert("yes");
+    } else {
+      alert("no")
+    }
+  newquestion();
+});
 
-function mc2a(){
-  if (crmc == 2){
-    alert("yes");
-  } else {
-    alert("no");  
-  }
-  setTimeout(newquestion, 50);
-}
+document.getElementById("bt2").addEventListener("click", function() {
+    if (crmc === 2){
+      alert("yes");
+    } else {
+      alert("no")
+    }
+  newquestion();
+});
 
-function mc3a(){
-  if (crmc == 3){
-    alert("yes");
-  } else {
-    alert("no");  
-  }
-  setTimeout(newquestion, 50);
-}
+document.getElementById("bt3").addEventListener("click", function() {
+    if (crmc === 3){
+      alert("yes");
+    } else {
+      alert("no")
+    }
+  newquestion();
+});
 
-function mc4a(){
-  if (crmc == 4){
-    alert("yes");
-  } else {
-    alert("no");  
-  }
-  setTimeout(newquestion, 50);
-}
+document.getElementById("bt4").addEventListener("click", function() {
+    if (crmc === 4){
+      alert("yes");
+    } else {
+      alert("no")
+    }
+  newquestion();
+});
 newquestion();
 
 
