@@ -22,7 +22,7 @@ var crtxt = 0;
 
 
 // The number of questions there are
-const quests = 2;
+const quests = 3;
 
 
 // Define all the question variables
@@ -38,27 +38,26 @@ var mc = document.getElementById("mc");
 var txtcont = document.getElementById("ta");
 
 
-
-
+// Fix a bug with RNG
+quests = quests - 0.01;
 
 
 // Run every time a question is answered
 function newquestion() {
 
   // Random question
-  const rng = Math.floor(Math.random() * quests);
-  console.log('Random question index:', rng);
+  rng = Math.floor(Math.random() * quests);
+  
 
   // Actually writes the question
-  alert(rng);
   if (rng === 0) {
     tgl = 2;
     crmc = 2;
 
-    q.innerHTML = "Answer the scenario.";
-    q2.innerHTML = "You have a project due in two days. What do you do?";
-    bt1.innerHTML = "Do it now";
-    bt2.innerHTML = "Do it in five minutes";
+    q.innerHTML = "Fill in the blank";
+    q2.innerHTML = "I am the _____";
+    bt1.innerHTML = "fanum tax";
+    bt2.innerHTML = "sigma";
   } 
   if (rng === 1) {
     tgl = 0;
@@ -76,11 +75,14 @@ function newquestion() {
     crmc = 4;
 
     q.innerHTML = "Fill in the blank.";
-    q2.innerHTML = "";
+    q2.innerHTML = "That wasn't very _____";
     bt1.innerHTML = "ohio";
-    bt2.innerHTML = "skibidi";
-    bt3.innerHTML = "mewing";
-    bt4.innerHTML = "fanum tax";
+    bt2.innerHTML = "fanum tax";
+    bt3.innerHTML = "rizz";
+    bt4.innerHTML = "skibidi";
+  }
+  if (rng === 3){
+    
   }
 
   // Toggles on and off multiple choice
