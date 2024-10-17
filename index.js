@@ -8,7 +8,7 @@ let txt = document.getElementById("text");
 
 
 // The random number generated every quetion
-var rng = 0;
+let rng = 0;
 
 // Toggle for multiple choice and text. 0 for multiple choice, 1 for text
 var tgl = 0;
