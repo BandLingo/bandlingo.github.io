@@ -22,7 +22,7 @@ var crtxt = 0;
 
 
 // The number of questions there are
-const quests = 3;
+const quests = 4;
 
 
 // Define all the question variables
@@ -38,7 +38,7 @@ var mc = document.getElementById("mc");
 var txtcont = document.getElementById("ta");
 
 
-// Fix a bug with RNG
+// Fix a bug with RNG that causes unwanted values
 quests = quests - 0.01;
 
 
@@ -76,13 +76,17 @@ function newquestion() {
 
     q.innerHTML = "Fill in the blank.";
     q2.innerHTML = "That wasn't very _____";
-    bt1.innerHTML = "ohio";
+    bt1.innerHTML = "mewing";
     bt2.innerHTML = "fanum tax";
     bt3.innerHTML = "rizz";
     bt4.innerHTML = "skibidi";
   }
   if (rng === 3){
-    
+    tgl = 1
+    crtxt = "sigma"
+
+    q.innerHTML = "fix the spelling error"
+    q2.innerHTML = "sigme"
   }
 
   // Toggles on and off multiple choice
