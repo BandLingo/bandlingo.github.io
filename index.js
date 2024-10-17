@@ -10,7 +10,7 @@ let txt = document.getElementById("text");
 // The random number generated every quetion
 let rng = 0;
 
-// Toggle for multiple choice and text. 0 for multiple choice, 1 for text
+// Toggle for multiple choice and text. 0 for multiple choice, 1 for text, 2 for 2 answer mc.
 var tgl = 0;
 
 
@@ -52,15 +52,13 @@ function newquestion() {
   // Actually writes the question
   alert(rng);
   if (rng === 0) {
-    tgl = 0;
-    crmc = 3;
+    tgl = 2;
+    crmc = 2;
 
-    q.innerHTML = "Fill in the blank.";
-    q2.innerHTML = "I am the ______";
-    bt1.innerHTML = "ohio";
-    bt2.innerHTML = "fanum tax";
-    bt3.innerHTML = "sigma";
-    bt4.innerHTML = "mewing";
+    q.innerHTML = "Answer the scenario.";
+    q2.innerHTML = "You have a project due in two days. What do you do?";
+    bt1.innerHTML = "Do it now";
+    bt2.innerHTML = "Do it in five minutes";
   } 
   if (rng === 1) {
     tgl = 0;
@@ -68,6 +66,17 @@ function newquestion() {
 
     q.innerHTML = "Fill in the blank.";
     q2.innerHTML = "_______ toilet";
+    bt1.innerHTML = "ohio";
+    bt2.innerHTML = "skibidi";
+    bt3.innerHTML = "mewing";
+    bt4.innerHTML = "fanum tax";
+  }
+  if (rng === 2){
+    tgl = 0;
+    crmc = 4;
+
+    q.innerHTML = "Fill in the blank.";
+    q2.innerHTML = "";
     bt1.innerHTML = "ohio";
     bt2.innerHTML = "skibidi";
     bt3.innerHTML = "mewing";
@@ -81,6 +90,11 @@ function newquestion() {
   } else if (tgl === 1) {
     txtcont.style.display = "";
     mc.style.display = "none";
+  } else if (tgl === 2) {
+    txtcont.style.display = "none";
+    mc.style.display = "block";
+    bt3.style.display = "none";
+    bt4.style.display = "none";
   }
 }
 
