@@ -146,7 +146,7 @@ document.getElementById("bt4").addEventListener("click", function() {
   newquestion();
 });
 document.getElementById("sub").addEventListener("click", function() {
-    if (crtxt === /* don't know what goes here yet :) */){
+    if (crtxt === txt.input){
       alert("yes");
     } else {
       alert("no")
