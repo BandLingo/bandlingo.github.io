@@ -22,7 +22,7 @@ var crtxt = 0;
 
 
 // The number of questions there are
-const quests = 4;
+let quests = 4;
 
 
 // Define all the question variables
