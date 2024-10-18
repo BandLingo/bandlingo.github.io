@@ -51,13 +51,15 @@ function newquestion() {
 
   // Actually writes the question
   if (rng === 0) {
-    tgl = 2;
+    tgl = 0;
     crmc = 2;
 
     q.innerHTML = "Fill in the blank";
     q2.innerHTML = "I am the _____";
     bt1.innerHTML = "fanum tax";
     bt2.innerHTML = "sigma";
+    bt3.innerHTML = "ohio";
+    bt4.innerHTML = "rizz";
   } 
   if (rng === 1) {
     tgl = 0;
@@ -98,11 +100,6 @@ function newquestion() {
   } else if (tgl === 1) {
     txtcont.style.display = "";
     mc.style.display = "none";
-  } else if (tgl === 2) {
-    txtcont.style.display = "none";
-    mc.style.display = "block";
-    bt3.style.display = "none";
-    bt4.style.display = "none";
   }
 }
 
