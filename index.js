@@ -1,4 +1,4 @@
-
+alert("v59")
 // Define all the input variables
 const bt1 = document.getElementById("bt1");
 const bt2 = document.getElementById("bt2");
