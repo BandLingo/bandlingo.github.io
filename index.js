@@ -25,9 +25,6 @@ var crtxt = 0;
 const quests = 4;
 
 
-// Submit button
-var sub = document.getElementById("sub");
-
 // Define all the question variables
 const q = document.getElementById("question");
 const q2 = document.getElementById("text");
