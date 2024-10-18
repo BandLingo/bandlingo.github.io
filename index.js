@@ -142,14 +142,14 @@ document.getElementById("bt4").addEventListener("click", function() {
     }
   newquestion();
 });
-/* document.getElementById("sub").addEventListener("click", function() {
-    if (crtxt === txt.input){
+document.getElementById("sub").addEventListener("click", function() {
+    if (crtxt === txt.value){
       alert("yes");
     } else {
       alert("no")
     }
   newquestion();
-});*/
+});
 newquestion();
 
 
