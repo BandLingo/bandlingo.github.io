@@ -95,8 +95,6 @@ function newquestion() {
   if (tgl === 0) {
     txtcont.style.display = "none";
     mc.style.display = "block";
-    bt3.style.display = "block";
-    bt4.style.display = "block";
   } else if (tgl === 1) {
     txtcont.style.display = "";
     mc.style.display = "none";
