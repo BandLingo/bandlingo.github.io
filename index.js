@@ -25,6 +25,9 @@ var crtxt = 0;
 let quests = 4;
 
 
+// Submit button
+var sub = document.getElementById("sub");
+
 // Define all the question variables
 const q = document.getElementById("question");
 const q2 = document.getElementById("text");
@@ -58,8 +61,6 @@ function newquestion() {
     q2.innerHTML = "I am the _____";
     bt1.innerHTML = "fanum tax";
     bt2.innerHTML = "sigma";
-    bt3.innerHTML = "ohio";
-    bt4.innerHTML = "rizz";
   } 
   if (rng === 1) {
     tgl = 0;
@@ -98,7 +99,7 @@ function newquestion() {
   } else if (tgl === 1) {
     txtcont.style.display = "";
     mc.style.display = "none";
-  }
+  } 
 }
 
 
@@ -145,9 +146,7 @@ document.getElementById("sub").addEventListener("click", function() {
     } else {
       alert("no")
     }
-  alert(txt.value);
   newquestion();
 });
 newquestion();
-
 
