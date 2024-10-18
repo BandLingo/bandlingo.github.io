@@ -145,14 +145,14 @@ document.getElementById("bt4").addEventListener("click", function() {
     }
   newquestion();
 });
-document.getElementById("sub").addEventListener("click", function() {
+/* document.getElementById("sub").addEventListener("click", function() {
     if (crtxt === txt.input){
       alert("yes");
     } else {
       alert("no")
     }
   newquestion();
-});
+});*/
 newquestion();
 
 
