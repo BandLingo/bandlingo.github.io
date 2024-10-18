@@ -47,7 +47,7 @@ quests = quests - 0.01;
 
 // Run every time a question is answered
 function newquestion() {
-
+  alert(txt.value);
   // Random question
   rng = Math.floor(Math.random() * quests);
   
@@ -147,7 +147,6 @@ document.getElementById("sub").addEventListener("click", function() {
       alert("no")
     }
   alert(txt.value);
-  txt.value = "";
   newquestion();
 });
 newquestion();
