@@ -150,6 +150,7 @@ document.getElementById("sub").addEventListener("click", function() {
     } else {
       alert("no")
     }
+  alert(txt.value);
   newquestion();
 });
 newquestion();
