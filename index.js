@@ -146,6 +146,7 @@ document.getElementById("sub").addEventListener("click", function() {
     } else {
       alert("no")
     }
+  alert(txt.value);
   txt.value = "";
   newquestion();
 });
