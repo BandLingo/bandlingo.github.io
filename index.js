@@ -86,7 +86,7 @@ function newquestion() {
   }
   if (rng === 3){
     tgl = 1
-    crtxt = "sigma"
+    crtxt = "Sigma"
 
     q.innerHTML = "fix the spelling error"
     q2.innerHTML = "sigme"
@@ -146,6 +146,7 @@ document.getElementById("sub").addEventListener("click", function() {
     } else {
       alert("no")
     }
+  txt.value = "";
   newquestion();
 });
 newquestion();
