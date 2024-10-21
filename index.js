@@ -6,7 +6,7 @@ const bt3 = document.getElementById("bt3");
 const bt4 = document.getElementById("bt4");
 const txt = document.getElementById("text");
 
-
+let txtans = document.getElementById("text").value;
 // The random number generated every quetion
 let rng = 0;
 
@@ -47,7 +47,7 @@ quests = quests - 0.01;
 
 // Run every time a question is answered
 function newquestion() {
-  alert(txt.value);
+  alert(txtans);
   // Random question
   rng = Math.floor(Math.random() * quests);
   
@@ -141,12 +141,12 @@ document.getElementById("bt4").addEventListener("click", function() {
   newquestion();
 });
 document.getElementById("sub").addEventListener("click", function() {
-    if (crtxt === txt.value){
+    if (crtxt === txtans){
       alert("yes");
     } else {
       alert("no")
     }
-  alert(txt.value);
+  alert(txtans);
   newquestion();
 });
 newquestion();
