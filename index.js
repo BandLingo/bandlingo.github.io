@@ -1,28 +1,23 @@
-alert("v60");
+alert("v66");
 // Define all the input variables
 const bt1 = document.getElementById("bt1");
 const bt2 = document.getElementById("bt2");
 const bt3 = document.getElementById("bt3");
 const bt4 = document.getElementById("bt4");
-const txt = document.getElementById("text");
-
-let txtans = document.getElementById("text").value;
 // The random number generated every quetion
 let rng = 0;
 
-// Toggle for multiple choice and text. 0 for multiple choice, 1 for text, 2 for 2 answer mc.
+// Toggle for multiple choice and text. 0 for multiple choice, 
 var tgl = 0;
 
 
 // Only for multiple choice, what answer is correct
 var crmc = 0;
 
-// Only for text, what spelling is correct
-var crtxt = 0;
 
 
 // The number of questions there are
-let quests = 4;
+let quests = 5;
 
 
 // Submit button
@@ -37,8 +32,6 @@ const q2 = document.getElementById("text");
 var replaceable = document.getElementById("replaceable");
 // Multiple Choice
 var mc = document.getElementById("mc");
-// Text Box container
-var txtcont = document.getElementById("ta");
 
 
 // Fix a bug with RNG that causes unwanted values
@@ -47,7 +40,6 @@ quests = quests - 0.01;
 
 // Run every time a question is answered
 function newquestion() {
-  alert(txtans);
   // Random question
   rng = Math.floor(Math.random() * quests);
   
@@ -61,6 +53,8 @@ function newquestion() {
     q2.innerHTML = "I am the _____";
     bt1.innerHTML = "fanum tax";
     bt2.innerHTML = "sigma";
+    bt3.innerHTML = "rizz";
+    bt4.innerHTML = "sigme";
   } 
   if (rng === 1) {
     tgl = 0;
@@ -85,11 +79,26 @@ function newquestion() {
     bt4.innerHTML = "skibidi";
   }
   if (rng === 3){
-    tgl = 1
-    crtxt = "Sigma"
+    tgl = 0;
+    crmc = 1
 
-    q.innerHTML = "fix the spelling error"
-    q2.innerHTML = "sigme"
+    q.innerHTML = "Fix the spelling error";
+    q2.innerHTML = "sigme";
+    bt1.innerHTML = "sigma";
+    bt2.innerHTML = "segma";
+    bt3.innerHTML = "simga";
+    bt4.innerHTML = "smega";
+  }
+  if (rng === 4){
+    tgl = 0;
+    crmc = 2;
+
+    q.innerHTML = "Compliment timmy";
+    q2.innerHTML = "\(ツ)/";
+    bt1.innerHTML = "You have an ohio jawline.";
+    bt2.innerHTML = "You have W rizz.";
+    bt3.innerHTML = "You look like a skibidi toilet iPad baby.";
+    bt4.innerHTML = "You have L rizz.";
   }
 
   // Toggles on and off multiple choice
@@ -138,15 +147,6 @@ document.getElementById("bt4").addEventListener("click", function() {
     } else {
       alert("no")
     }
-  newquestion();
-});
-document.getElementById("sub").addEventListener("click", function() {
-    if (crtxt === txtans){
-      alert("yes");
-    } else {
-      alert("no")
-    }
-  alert(txtans);
   newquestion();
 });
 newquestion();
