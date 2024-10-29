@@ -1,4 +1,4 @@
-alert("v67");
+alert("burrito");
 // Define all the input variables
 const bt1 = document.getElementById("bt1");
 const bt2 = document.getElementById("bt2");
@@ -162,5 +162,5 @@ document.getElementById("bt4").addEventListener("click", function() {
   newquestion();
 });
 newquestion();
-bt4.style.background.color = "#bd2424";
+document.getElementById("chktxt").innerHTML = "worky!!!";
 
