@@ -118,7 +118,10 @@ document.getElementById("bt1").addEventListener("click", function() {
     if (crmc === 1){
       alert("yes");
     } else {
-      alert("no")
+      alert("no");
+      bt1.style.background.color = "#bd2424";
+      delay(1000);
+      bt1.style.background.color = "#18b551c";
     }
   newquestion();
 });
@@ -127,7 +130,10 @@ document.getElementById("bt2").addEventListener("click", function() {
     if (crmc === 2){
       alert("yes");
     } else {
-      alert("no")
+      alert("no");
+      bt2.style.background.color = "#bd2424";
+      delay(1000);
+      bt2.style.background.color = "#18b551c";
     }
   newquestion();
 });
@@ -136,7 +142,10 @@ document.getElementById("bt3").addEventListener("click", function() {
     if (crmc === 3){
       alert("yes");
     } else {
-      alert("no")
+      alert("no");
+      bt3.style.background.color = "#bd2424";
+      delay(1000);
+      bt3.style.background.color = "#18b551c";
     }
   newquestion();
 });
@@ -145,7 +154,10 @@ document.getElementById("bt4").addEventListener("click", function() {
     if (crmc === 4){
       alert("yes");
     } else {
-      alert("no")
+      alert("no");
+      bt4.style.background.color = "#bd2424";
+      delay(1000);
+      bt4.style.background.color = "#18b551c";
     }
   newquestion();
 });
