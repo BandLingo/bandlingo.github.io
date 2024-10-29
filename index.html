@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SlangLingo</title>
     <style>
-
+    .anscheck { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+    }
     button {
       background-color: #18b551;
       border: none;
@@ -49,7 +54,13 @@
         <button id="bt4"></button>
       </div>
      </div>
+      <!-- tells you wrong or right -->
+    <div class="anscheck">
+      <img height="70px" width="70px" src="NOP.png">  
+      <h1 id="chktxt"></h1>
+    </div>
      <!-- Link to javascript so code is less messy here.-->
    <script src="index.js"></script>
+    
   </body>
 </html>
