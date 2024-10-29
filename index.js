@@ -43,7 +43,7 @@ function newquestion() {
   // Random question
   rng = Math.floor(Math.random() * quests);
   
-
+  document.getElementById("chktxt").innerHTML = "worky!!!";
   // Actually writes the question
   if (rng === 0) {
     tgl = 0;
@@ -162,5 +162,5 @@ document.getElementById("bt4").addEventListener("click", function() {
   newquestion();
 });
 newquestion();
-document.getElementById("chktxt").innerHTML = "worky!!!";
+
 
