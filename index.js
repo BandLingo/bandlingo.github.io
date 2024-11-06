@@ -94,7 +94,7 @@ function newquestion() {
     crmc = 2;
 
     q.innerHTML = "Compliment timmy";
-    q2.innerHTML = "\(ツ)/";
+    q2.innerHTML = "(ツ)";
     bt1.innerHTML = "You have an ohio jawline.";
     bt2.innerHTML = "You have W rizz.";
     bt3.innerHTML = "You look like a skibidi toilet iPad baby.";
