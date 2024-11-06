@@ -1,4 +1,4 @@
-alert("burrito");
+alert("beans");
 // Define all the input variables
 const bt1 = document.getElementById("bt1");
 const bt2 = document.getElementById("bt2");
@@ -29,7 +29,6 @@ const q2 = document.getElementById("text");
 
 
 // Define all the <div>
-var replaceable = document.getElementById("replaceable");
 // Multiple Choice
 var mc = document.getElementById("mc");
 
