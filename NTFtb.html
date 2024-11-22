@@ -37,7 +37,21 @@
     <br>
     <h2>Choose a note:</h2>
     <br>
-    <button id="Bb" >B Flat</button>
+    <button id="Bb2" >B Flat 2</button> <button id="Bn2" >B Natural 2</button> <button id="C2" >C 2</button>
     
   </body>
+  <script>
+  // fone, ftwo, and fthree represent the different valves of the instrument.
+  let fone = 0;
+  let ftwo = 0;
+  let fthree = 0;
+  // air is how you should blow your air to play the note.
+  let air = 1;
+  document.getElementById('Bb2').onclick = function() {
+  fone = 0;
+  ftwo = 0;
+  fthree = 0;
+  air = 1;
+}​;
+​</script>
 </html>
